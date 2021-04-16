@@ -26,6 +26,7 @@ input {
   text-transform: uppercase;
   text-align: center;
   transition: .3s ease all;
+  user-select: none;
 }
 
 @media (max-width: 600px) {
@@ -64,11 +65,24 @@ input {
 }
 
 .title {
-  height: 25%;
+  height: 35%;
+}
+
+@media (max-width: 600px) {
+  .title {
+    height: 25%;
+  }
 }
 
 h1 {
   text-shadow: 1px 1px var(--gray);
+  font-size: 100px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 50px;
+  }
 }
 
 button {
@@ -79,7 +93,7 @@ button {
   width: 60%;
   margin: 1rem 0 1rem;
   padding: 15px 30px;
-  border-radius: 32px;
+  border-radius: 31px;
 
   cursor: pointer;
 }
@@ -89,14 +103,17 @@ button:active,
 button:focus {
   background-color: var(--gray);
   color: var(--black);
+  transform: translate(2px, 2px);
+  transition: none;
 }
 
 p {
   text-transform: none;
 }
 
-.about {
+.text {
   width: 60%;
+  height: 15%;
   margin-bottom: 1rem;
 }
 
@@ -104,4 +121,19 @@ p {
   .about {
     width: 80%;
   }  
+}
+
+p,
+h1,
+h5 {
+  animation-name: wiggle;
+  animation-duration: 1ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes wiggle {
+  0% { transform: translate(2px, 0px); }
+  50% { transform: translate(0px, 0px) }
+  100% { transform: translate(2px, 0px) }
 }

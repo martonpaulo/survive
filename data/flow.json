@@ -1,0 +1,51 @@
+[
+  {
+    "id": 0,
+    "audio": "click.wav",
+    "text": "Você está de frente a uma porta",
+    "options": [
+      {
+        "text": "Abrir porta",
+        "goTo": 1
+      },
+      {
+        "text": "Bater na porta",
+        "goTo": 2
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "audio": "click.wav",
+    "text": "O que você responde?",
+    "options": [
+      {
+        "text": "'Socorro! Me ajude'",
+        "goTo": 0
+      },
+      {
+        "text": "'Não preciso de ajuda'",
+        "goTo": 0
+      },
+      {
+        "text": "'Quem é você?'",
+        "goTo": 0
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "audio": "click.wav",
+    "text": "Ninguém atente. O que fazer?",
+    "options": [
+      {
+        "text": "Bater novamente",
+        "goTo": 2
+      },
+      {
+        "text": "Abrir a porta",
+        "goTo": 1
+      }
+    ]
+  }
+]
