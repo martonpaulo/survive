@@ -1,51 +1,702 @@
 [
-  {
-    "id": 0,
-    "audio": "click.wav",
-    "text": "Você está de frente a uma porta",
-    "options": [
-      {
-        "text": "Abrir porta",
-        "goTo": 1
-      },
-      {
-        "text": "Bater na porta",
-        "goTo": 2
-      }
-    ]
-  },
-  {
-    "id": 1,
-    "audio": "click.wav",
-    "text": "O que você responde?",
-    "options": [
-      {
-        "text": "'Socorro! Me ajude'",
-        "goTo": 0
-      },
-      {
-        "text": "'Não preciso de ajuda'",
-        "goTo": 0
-      },
-      {
-        "text": "'Quem é você?'",
-        "goTo": 0
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "audio": "click.wav",
-    "text": "Ninguém atente. O que fazer?",
-    "options": [
-      {
-        "text": "Bater novamente",
-        "goTo": 2
-      },
-      {
-        "text": "Abrir a porta",
-        "goTo": 1
-      }
-    ]
-  }
+	{
+		"id": 0,
+		"audio": "click.wav",
+		"text": "Soldado, soldado, na escuta? Onde você está?",
+		"options": [
+			{
+				"text": "Continuar",
+				"goTo": 1
+			}
+		]
+	},
+	{
+		"id": 1,
+		"audio": "click.wav",
+		"text": "Eu estou na base 3, estávamos aqui na base e do nada houve um barulho enorme, eu não vejo nada!!",
+		"options": [
+			{
+				"text": "Continuar",
+				"goTo": 2
+			}
+		]
+	},
+	{
+		"id": 2,
+		"audio": "click.wav",
+		"text": "Meu Deus, achamos que o tínhamos perdido homem, caiu uma bomba na área onde você está a alguns minutos, já confirmamos a morte de 5 soldados, você é o único sobrevivente confirmado até agora, tem mais uma pessoa por aí em algum lugar, não sabemos se está viva. Estamos enviando um helicóptero para o resgatar, ele irá chegar no heliporto em alguns minutos, terás que dar um jeito de chegar lá a tempo.  ",
+		"options": [
+			{
+				"text": "Continuar",
+				"goTo": 3
+			}
+		]
+	},
+	{
+		"id": 3,
+		"audio": "click.wav",
+		"text": " Podes me dizer com mais precisão onde estás? ",
+		"options": [
+			{
+				"text": "Estou a cerca de 50 metros, ao leste do segundo hangar da base 3",
+				"goTo": 3
+			}
+		]
+	},
+	{
+		"id": 4,
+		"audio": "click.wav",
+		"text": " Ok, irei te guiar a partir daí. ",
+		"options": [
+			{
+				"text": "Continuar",
+				"goTo": 5
+			}
+		]
+	},
+	{
+		"id": 5,
+		"audio": "click.wav",
+		"text": " Soldado, saia da base 3, ande para a esquerda por cerca de 30 metro, você eventualmente irá encontrar um muro. Quando chegar nele mande notícias.",
+		"options": [
+			{
+				"text": "Espere, eu estou cego",
+				"goTo": 6
+			}
+		]
+	},
+	{
+		"id": 6,
+		"audio": "click.wav",
+		"text": "A porta está na sua frente, siga até ela, irás sair e poder seguir as outras instruções.",
+		"options": [
+			{
+				"text": "Andar até a porta",
+				"goTo": 7
+			},
+			{
+				"text": "Espere, o outro soldado pode estar vivo.",
+				"goTo": 100
+			}
+		]
+	},
+	{
+		"id": 7,
+		"audio": "click.wav",
+		"text": "Encontrei a porta, vou seguir na direção indicada",
+		"options": [
+			{
+				"text": "Andar por 30 metros até o muro",
+				"goTo": 8
+			}
+		]
+	},
+	{
+		"id": 8,
+		"audio": "click.wav",
+		"text": "Acredito que cheguei na posição indicada, estou escutando o barulho de explosões",
+		"options": [
+			{
+				"text": "continuar",
+				"goTo": 9
+			}
+		]
+	},
+	{
+		"id": 9,
+		"audio": "click.wav",
+		"text": "Soldado, está acontecendo um bombardeio próximo a você, mas infelizmente não teremos tempo para ir por outro caminho, se conseguir siga pelo norte",
+		"options": [
+			{
+				"text": "Seguir para o norte (O som das explosões está vindo do noroeste)",
+				"goTo": 10
+			},
+			{
+				"text": "Se afastar do barulho pelo som",
+				"goTo": 11
+			}
+		]
+	},
+	{
+		"id": 10,
+		"audio": "click.wav",
+		"text": "Uma bomba cai ao seu lado, o barulho é enorme e os estilhaços dela voam em sua direção, você é atingido por eles e suas pernas são laceradas.",
+		"options": [
+			{
+				"text": "GAME OVER, TRY AGAIN",
+				"goTo": 0
+			}
+		]
+	},
+	{
+		"id": 11,
+		"audio": "click.wav",
+		"text": "\"Consegui me afastar do bombardeio\", diz você a rádio, o rádio fala então \"Você deve estar na entrada do posto 2, podes seguir pela esquerda ou pela direita daí, se guie pelos caminhos de pedra\"",
+		"options": [
+			{
+				"text": "\"Que merda\", buscar se guiar pelas pedras de marcação e fazer a volta pela esquerda",
+				"goTo": 12
+			},
+			{
+				"text": "\"Que merda\", buscar se guiar pelas pedras de marcação e fazer a volta pela direita",
+				"goTo": 13
+			}
+		]
+	},
+	{
+		"id": 12,
+		"audio": "click.wav",
+		"text": "Você pisa em uma mina terrestre e morre instantâneamente",
+		"options": [
+			{
+				"text": "GAME OVER, TRY AGAIN",
+				"goTo": 0
+			}
+		]
+	},
+	{
+		"id": 13,
+		"audio": "click.wav",
+		"text": "Você escuta o som de soldados, mas não sabe exatamente de onde eles vem.",
+		"options": [
+			{
+				"text": "Tentar se esconder no mato",
+				"goTo": 14
+			}
+		]
+	},
+	{
+		"id": 14,
+		"audio": "click.wav",
+		"text": "O rádio faz barulho, é o seu guia falando \"Soldado, onde estás agora?\"",
+		"options": [
+			{
+				"text": "Tentar desligar o rádio.",
+				"goTo": 15
+			}
+		]
+	},
+	{
+		"id": 15,
+		"audio": "click.wav",
+		"text": "Você não consegue desligar o rádio, os soldados escutam e gritam \"Tem alguém aí?\" E apontam as armas na sua direção.",
+		"options": [
+			{
+				"text": "Tentar correr",
+				"goTo": 16
+			},
+			{
+				"text": "Se esgueirar mais para dentro do mato",
+				"goTo": 17
+			}
+		]
+	},
+	{
+		"id": 16,
+		"audio": "click.wav",
+		"text": "Os soldados o escutam e atiram em sua direção, uma das balas atravessa o seu peito e você cai no chão.",
+		"options": [
+			{
+				"text": "GAME OVER, TRY AGAIN",
+				"goTo": 0
+			}
+		]
+	},
+	{
+		"id": 17,
+		"audio": "click.wav",
+		"text": "\"Nossa foi por pouco, mas acho que consegui me afastar\", você ouve o rádio que diz \"soldado, o tempo está acabando, siga o caminho de onde estás pela esquerda através do muro, indo com a mão nele chegarás rápido, deverás chegar a uma escada\".",
+		"options": [
+			{
+				"text": "Correr com a mão na parede para chegar a tempo",
+				"goTo": 16
+			},
+			{
+				"text": "Ir com a mão na parede devagar, tentando se abaixar quando ver os soldados.",
+				"goTo": 18
+			}
+		]
+	},
+	{
+		"id": 18,
+		"audio": "click.wav",
+		"text": "O tempo está se esgotando soldado.",
+		"options": [
+			{
+				"text": "Estou indo o mais rápido que posso, não posso correr o risco de ser visto",
+				"goTo": 19
+			},
+			{
+				"text": "Correr nesse trajeto final até a escada",
+				"goTo": 20
+			}
+		]
+	},
+	{
+		"id": 19,
+		"audio": "click.wav",
+		"text": "Os soldados inimigos passam pelo caminho onde você está, o vêem e lhe rendem como prisioneiro.",
+		"options": [
+			{
+				"text": "GAME OVER, TRY AGAIN",
+				"goTo": 0
+			}
+		]
+	},
+	{
+		"id": 20,
+		"audio": "click.wav",
+		"text": "Você chegou na escada e então fala pelo rádio \"Eu cheguei na escadaria para o Heliporto\" e o guia responde \"suba logo, há alguns soldados inimigos de guarda no heliporto, mas eles estão na mira de nossos atiradores que estão a 300 metros da região, ordenaremos que eles sejam mortos quando você estiver mais próximo deles\".",
+		"options": [
+			{
+				"text": "Subir na escadaria",
+				"goTo": 21
+			}
+		]
+	},
+	{
+		"id": 21,
+		"audio": "click.wav",
+		"text": "Você vai subindo as escadas e conforme sobe você ouve o som de 3 tiros, os tiros chamam a atenção dos soldados inimigos que procuram a fonte dele, o rádio fala \"O caminho está livre, suba logo\"",
+		"options": [
+			{
+				"text": "Correr com as mãos no corrimão para não cair.",
+				"goTo": 22
+			}
+		]
+	},
+	{
+		"id": 22,
+		"audio": "click.wav",
+		"text": "Você chega ao topo e ouve o helicoptero chegando, os soldados inimigos estavam mortos em um andar anterior ao heliporto.",
+		"options": [
+			{
+				"text": "Continuar",
+				"goTo": 23
+			}
+		]
+	},
+	{
+		"id": 23,
+		"audio": "click.wav",
+		"text": "O helicoptero pousa e um homem desce do helicoptero e pega no seu braço falando \"Leo, venha comigo, você está a salvo\"",
+		"options": [
+			{
+				"text": "Seguir o homem até o helicoptero",
+				"goTo": 24
+			}
+		]
+	},
+	{
+		"id": 24,
+		"audio": "click.wav",
+		"text": "Você está a salvo, o helicoptero alça vôo e é ordenado pelos seus aliados um bombardeio para impedir que os inimigos tomem conta daquele posto militar.",
+		"options": [
+			{
+				"text": "PARABÉNS, VOCÊ SOBREVIVEU.",
+				"goTo": 0
+			}
+		]
+	},
+	{
+		"id": 25,
+		"audio": "click.wav",
+		"text": "Estás cego, você tem certeza que irá buscar por ele? Isso é burrice.",
+		"options": [
+			{
+				"text": "Tenho certeza",
+				"goTo": 26
+			},
+			{
+				"text": "Vamos embora",
+				"goTo": 6
+			}
+		]
+	},
+	{
+		"id": 26,
+		"audio": "click.wav",
+		"text": "bem, terás de entrar ainda mais na base, deve haver uma porta à sua direita, ande em direção a ela, se chegar a uma parede na direita, procure a maçaneta da porta.",
+		"options": [
+			{
+				"text": "Andar a direita",
+				"goTo": 27
+			}
+		]
+	},
+	{
+		"id": 27,
+		"audio": "click.wav",
+		"text": "Ryan começa a andar a direita, até que esbarra em uma pequena mureta e quase caí para a frente, aparentemente a explosão havia derrubado aquela parede.",
+		"options": [
+			{
+				"text": "Continuar",
+				"goTo": 28
+			}
+		]
+	},
+	{
+		"id": 28,
+		"audio": "click.wav",
+		"text": "Você está bem?",
+		"options": [
+			{
+				"text": "Estou bem, mas a parede está destruída, acabei esbarrando no que sobrou dela.",
+				"goTo": 29
+			}
+		]
+	},
+	{
+		"id": 29,
+		"audio": "click.wav",
+		"text": "Bem, essa parede leva a um corredor, passe pelo corredor até o final para chegar ao último lugar onde o soldado Ryan deu um sinal.",
+		"options": [
+			{
+				"text": "Passar andando pelo corredor",
+				"goTo": 30
+			}
+		]
+	},
+	{
+		"id": 30,
+		"audio": "click.wav",
+		"text": "Sons de tiroteio vindo da esquerda",
+		"options": [
+			{
+				"text": "Continuar",
+				"goTo": 31
+			}
+		]
+	},
+	{
+		"id": 31,
+		"audio": "click.wav",
+		"text": "Soldado? Chegou ao final do corredor?",
+		"options": [
+			{
+				"text": "Cheguei, estou ouvindo o som de tiros vindos da esquerda",
+				"goTo": 32
+			}
+		]
+	},
+	{
+		"id": 32,
+		"audio": "click.wav",
+		"text": "Vamos seguir logo com isso, temos alguns soldados neste exato momento que estão dentro da mata, você deve estar ouvindo eles em combate. Bem, siga para a direita, irás encontrar uma porta, tateie até encontrar a maçaneta da porta que está a sua direita.",
+		"options": [
+			{
+				"text": "Tatear a parede",
+				"goTo": 33
+			}
+		]
+	},
+	{
+		"id": 33,
+		"audio": "click.wav",
+		"text": "Base, encontrei a porta, vou a abrir.",
+		"options": [
+			{
+				"text": "Abrir a maçaneta",
+				"goTo": 34
+			}
+		]
+	},
+	{
+		"id": 34,
+		"audio": "click.wav",
+		"text": "Ao abrir a maçaneta, alguém dentro daquela porta dá um tiro contra ti e acerta o rádio, enquanto você se joga no chão, \"quem está aí?\" pergunta a pessoa que atirou contra você.",
+		"options": [
+			{
+				"text": "Sou eu, o Leo, é você Ryan?",
+				"goTo": 35
+			}
+		]
+	},
+	{
+		"id": 35,
+		"audio": "click.wav",
+		"text": "Meu Deus, é você mesmo Leo? Achei que apenas eu estivesse vivo.",
+		"options": [
+			{
+				"text": "Se levantar e responder \"Sim, sou eu\"",
+				"goTo": 36
+			}
+		]
+	},
+	{
+		"id": 36,
+		"audio": "click.wav",
+		"text": "Estou com a perna machucada e vejo que seus olhos estão ruins.",
+		"options": [
+			{
+				"text": "Um helicoptero está chegando para o nosso resgate, se conseguirmos chegar ao heliporto poderemos sobreviver.",
+				"goTo": 37
+			}
+		]
+	},
+	{
+		"id": 37,
+		"audio": "click.wav",
+		"text": "Eu sei onde fica o heliporto, há um caminho partindo pelo sul desta base que pode chegar lá mais rápido.",
+		"options": [
+			{
+				"text": "Vamos por lá então, serás o nosso guia e tens até uma arma",
+				"goTo": 38
+			}
+		]
+	},
+	{
+		"id": 38,
+		"audio": "click.wav",
+		"text": "Bem, foi a última bala, siga a minha voz para que possas me ajudar a se levantar.",
+		"options": [
+			{
+				"text": "Espere, e o rádio? Irei testar ele primeiro, talvez aja alguma nova instrução.",
+				"goTo": 39
+			},
+			{
+				"text": "Andar até ele seguindo a voz.",
+				"goTo": 118
+			}
+		]
+	},
+	{
+		"id": 39,
+		"audio": "click.wav",
+		"text": "Shhh Soldado? Shhhhhhhh evite pas Shhhhh posto 2 SHhhhh há bombas Shhhhhhhhhhhhhhhhh",
+		"options": [
+			{
+				"text": "Posto 2?",
+				"goTo": 40
+			}
+		]
+	},
+	{
+		"id": 40,
+		"audio": "click.wav",
+		"text": "Eu sei onde fica, iremos evitar passar por lá.",
+		"options": [
+			{
+				"text": "Ok, vamos então",
+				"goTo": 43
+			},
+			{
+				"text": "Onde fica isso?",
+				"goTo": 41
+			}
+		]
+	},
+	{
+		"id": 41,
+		"audio": "click.wav",
+		"text": "Fica ao sul da base 3, a caminho do Heliporto, o caminho mais rápido passa por lá, mas iremos evitar.",
+		"options": [
+			{
+				"text": "Certo, andemos então",
+				"goTo": 42
+			}
+		]
+	},
+	{
+		"id": 42,
+		"audio": "click.wav",
+		"text": "Siga a minha voz então.",
+		"options": [
+			{
+				"text": "Seguir",
+				"goTo": 43
+			}
+		]
+	},
+	{
+		"id": 43,
+		"audio": "click.wav",
+		"text": "Você chega até ele e o ajuda a se apoiar em ti.",
+		"options": [
+			{
+				"text": "Vamos",
+				"goTo": 44
+			}
+		]
+	},
+	{
+		"id": 44,
+		"audio": "click.wav",
+		"text": "Siga em frente, chegarás até a porta, então vire a direita.",
+		"options": [
+			{
+				"text": "Andar em frente",
+				"goTo": 45
+			}
+		]
+	},
+	{
+		"id": 45,
+		"audio": "click.wav",
+		"text": "Opa, um pouco para o lado, pronto, agora vire a direita",
+		"options": [
+			{
+				"text": "Virar a direita",
+				"goTo": 46
+			}
+		]
+	},
+	{
+		"id": 46,
+		"audio": "click.wav",
+		"text": "Wow, a parede aqui está destruída também, vamos poder sair da base por aqui. Logo alí na frente fica o posto 2.",
+		"options": [
+			{
+				"text": "Estamos longe?",
+				"goTo": 47
+			}
+		]
+	},
+	{
+		"id": 47,
+		"audio": "click.wav",
+		"text": "\"Não muito\" diz ele pouco antes de ouvir barulhos de tiro muito próximos",
+		"options": [
+			{
+				"text": "Abaixe-se",
+				"goTo": 49
+			},
+			{
+				"text": "Corra",
+				"goTo": 48
+			}
+		]
+	},
+	{
+		"id": 48,
+		"audio": "click.wav",
+		"text": "Você tenta correr colocando o Ryan em suas costas, ele diz \"Tenha calma soldado\" pouco antes dele ver um soldado inimigo e então ele diz \"VOLTE\", mas era tarde, você apenas ouve os tiros e então caí no chão.",
+		"options": [
+			{
+				"text": "GAME OVER, TRY AGAIN",
+				"goTo": 0
+			}
+		]
+	},
+	{
+		"id": 49,
+		"audio": "click.wav",
+		"text": "Você se abaixa, o Ryan fica atento ao caminho, quando ele vê o soldado chinês indo em direção a floresta e sussurra \"É um soldado inimigo, foi bom termos nos abaixado, acho que de lá não dá para nos ver, o matagal está alto\".",
+		"options": [
+			{
+				"text": "Aguarde",
+				"goTo": 50
+			}
+		]
+	},
+	{
+		"id": 50,
+		"audio": "click.wav",
+		"text": "Vamos, acho que ele já foi, vamos dar a volta no posto 2, vá em frente soldado.",
+		"options": [
+			{
+				"text": "Continuar",
+				"goTo": 51
+			}
+		]
+	},
+	{
+		"id": 51,
+		"audio": "click.wav",
+		"text": "Após uma caminhada, finalmente vocês estavam chegando ao heliporto, os sons de tiro se tornavam cada vez mais distantes",
+		"options": [
+			{
+				"text": "Estamos a quantos metros do posto?",
+				"goTo": 52
+			}
+		]
+	},
+	{
+		"id": 52,
+		"audio": "click.wav",
+		"text": "Uns 100 metros mais ou menos, estamos chegando. Siga a esquerda, iremos chegar a escadaria para o heliporto em breve.",
+		"options": [
+			{
+				"text": "Continuar",
+				"goTo": 53
+			}
+		]
+	},
+	{
+		"id": 53,
+		"audio": "click.wav",
+		"text": "Seguindo a esquerda vocês chegaram a escadaria, em algum lugar soldados gritaram algumas palavras em chinês e vocês ouviram, Ryan então fala \"Suba as escadas, acho que eles não nos viram, estamos quase lá, espero que o helicoptero venha mesmo\".",
+		"options": [
+			{
+				"text": "Subir as escadas",
+				"goTo": 54
+			}
+		]
+	},
+	{
+		"id": 54,
+		"audio": "click.wav",
+		"text": "Subindo as escadas, vocês ouvem 3 tiros e vêem um soldado caindo do andar superior diretamente no chão enquanto gritava, era um soldado chinês e ele morreu ao cair.",
+		"options": [
+			{
+				"text": "Cruzes, o que foi isso?",
+				"goTo": 55
+			}
+		]
+	},
+	{
+		"id": 55,
+		"audio": "click.wav",
+		"text": "Foi um soldado inimigo, acho que de alguma forma o comando sabe que estamos chegando ao heliporto, vamos logo, os soldados inimigos provavelmente irão procurar saber o que ocorreu.",
+		"options": [
+			{
+				"text": "Continuar a subir até o heliporto",
+				"goTo": 56
+			}
+		]
+	},
+	{
+		"id": 56,
+		"audio": "click.wav",
+		"text": "Vocês chegaram ao heliporto, havia mais um soldado chinês morto com um tiro, Ryan descreve o que ele via para ti, enquanto Ryan descrevia, o som do helicoptero passou a ser ouvido de fundo.",
+		"options": [
+			{
+				"text": "Isso é o helicoptero que foi dito Ryan?",
+				"goTo": 57
+			}
+		]
+	},
+	{
+		"id": 57,
+		"audio": "click.wav",
+		"text": "Sim, é um helicoptero aliado ele está chegando.",
+		"options": [
+			{
+				"text": "Conseguimos!!",
+				"goTo": 58
+			}
+		]
+	},
+	{
+		"id": 58,
+		"audio": "click.wav",
+		"text": "O helicoptero pousa no heliporto e dele saem 2 soldados aliados, um deles pega o Ryan e o leva para o helicoptero e o outro o guia até a cabine, dizendo \"Que bom que vocês estão bem, realizaste um feito heróico!!!\"",
+		"options": [
+			{
+				"text": "Obrigado Senhor!!",
+				"goTo": 59
+			}
+		]
+	},
+	{
+		"id": 60,
+		"audio": "click.wav",
+		"text": "Vocês estão a salvo, o helicoptero alça vôo e é ordenado pelos seus aliados um bombardeio para impedir que os inimigos tomem conta daquele posto militar.",
+		"options": [
+			{
+				"text": "PARABÉNS, VOCÊ SOBREVIVEU.",
+				"goTo": 0
+			}
+		]
+	}
 ]
