@@ -1,7 +1,7 @@
 [
 	{
 		"id": 0,
-		"audio": "1.wav",
+		"audio": "0.wav",
 		"text": "Rádio: Soldado, soldado, na escuta? Onde você está?",
 		"options": [
 			{
@@ -13,7 +13,7 @@
 	{
 		"id": 1,
 		"audio": "click.wav",
-		"text": "Leo: Eu estou na base 3, estávamos aqui na base e do nada houve um barulho enorme, eu não vejo nada!!",
+		"text": "Léo: Eu estou na base 3, estávamos aqui na base e do nada houve um barulho enorme, eu não vejo nada!!",
 		"options": [
 			{
 				"text": "Continuar",
@@ -23,7 +23,7 @@
 	},
 	{
 		"id": 2,
-		"audio": "click.wav",
+		"audio": "2.wav",
 		"text": "Rádio enviando uma mensagem longa",
 		"options": [
 			{
@@ -34,19 +34,19 @@
 	},
 	{
 		"id": 3,
-		"audio": "click.wav",
-		"text": " Podes me dizer com mais precisão onde estás? ",
+		"audio": "3.wav",
+		"text": "Rádio: Podes me dizer com mais precisão onde estás? ",
 		"options": [
 			{
-				"text": "Estou a cerca de 50 metros, ao leste do segundo hangar da base 3",
-				"goTo": 3
+				"text": " Estou a cerca de 50 metros, ao leste do segundo hangar da base 3",
+				"goTo": 4
 			}
 		]
 	},
 	{
 		"id": 4,
-		"audio": "click.wav",
-		"text": " Ok, irei te guiar a partir daí. ",
+		"audio": "4.wav",
+		"text": " Rádio: Ok, irei te guiar a partir daí. ",
 		"options": [
 			{
 				"text": "Continuar",
@@ -56,8 +56,8 @@
 	},
 	{
 		"id": 5,
-		"audio": "click.wav",
-		"text": " Soldado, saia da base 3, ande para a esquerda por cerca de 30 metro, você eventualmente irá encontrar um muro. Quando chegar nele mande notícias.",
+		"audio": "5.wav",
+		"text": " Rádio: Soldado, saia da base 3, ande para a esquerda por cerca de 30 metros, você eventualmente irá encontrar um muro. Quando chegar nele mande notícias.",
 		"options": [
 			{
 				"text": "Espere, eu estou cego",
@@ -67,8 +67,8 @@
 	},
 	{
 		"id": 6,
-		"audio": "click.wav",
-		"text": "A porta está na sua frente, siga até ela, irás sair e poder seguir as outras instruções.",
+		"audio": "6.wav",
+		"text": " Rádio: A porta está na sua frente, siga até ela, irás sair e poder seguir as outras instruções.",
 		"options": [
 			{
 				"text": "Andar até a porta",
@@ -82,8 +82,8 @@
 	},
 	{
 		"id": 7,
-		"audio": "click.wav",
-		"text": "Encontrei a porta, vou seguir na direção indicada",
+		"audio": "7.wav",
+		"text": " Léo: Encontrei a porta, vou seguir na direção indicada",
 		"options": [
 			{
 				"text": "Andar por 30 metros até o muro",
@@ -93,8 +93,8 @@
 	},
 	{
 		"id": 8,
-		"audio": "click.wav",
-		"text": "Acredito que cheguei na posição indicada, estou escutando o barulho de explosões",
+		"audio": "8.wav",
+		"text": " Léo: Acredito que cheguei na posição indicada, estou escutando o barulho de explosões",
 		"options": [
 			{
 				"text": "continuar",
@@ -104,7 +104,7 @@
 	},
 	{
 		"id": 9,
-		"audio": "click.wav",
+		"audio": "9.wav",
 		"text": "Soldado, está acontecendo um bombardeio próximo a você, mas infelizmente não teremos tempo para ir por outro caminho, se conseguir siga pelo norte",
 		"options": [
 			{
@@ -119,7 +119,7 @@
 	},
 	{
 		"id": 10,
-		"audio": "click.wav",
+		"audio": "10.wav",
 		"text": "Uma bomba cai ao seu lado, o barulho é enorme e os estilhaços dela voam em sua direção, você é atingido por eles e suas pernas são laceradas.",
 		"options": [
 			{
@@ -130,22 +130,22 @@
 	},
 	{
 		"id": 11,
-		"audio": "click.wav",
-		"text": "\"Consegui me afastar do bombardeio\", diz você a rádio, o rádio fala então \"Você deve estar na entrada do posto 2, podes seguir pela esquerda ou pela direita daí, se guie pelos caminhos de pedra\"",
+		"audio": "11.wav",
+		"text": "Léo: Consegui me afastar do bombardeio",
 		"options": [
 			{
-				"text": "\"Que merda\", buscar se guiar pelas pedras de marcação e fazer a volta pela esquerda",
+				"text": "Buscar se guiar pelas pedras de marcação e fazer a volta pela esquerda",
 				"goTo": 12
 			},
 			{
-				"text": "\"Que merda\", buscar se guiar pelas pedras de marcação e fazer a volta pela direita",
+				"text": "Buscar se guiar pelas pedras de marcação e fazer a volta pela direita",
 				"goTo": 13
 			}
 		]
 	},
 	{
 		"id": 12,
-		"audio": "click.wav",
+		"audio": "8.wav",
 		"text": "Você pisa em uma mina terrestre e morre instantâneamente",
 		"options": [
 			{
@@ -156,7 +156,7 @@
 	},
 	{
 		"id": 13,
-		"audio": "click.wav",
+		"audio": "13.wav",
 		"text": "Você escuta o som de soldados, mas não sabe exatamente de onde eles vem.",
 		"options": [
 			{
@@ -167,8 +167,8 @@
 	},
 	{
 		"id": 14,
-		"audio": "click.wav",
-		"text": "O rádio faz barulho, é o seu guia falando \"Soldado, onde estás agora?\"",
+		"audio": "14.wav",
+		"text": "O rádio faz barulho!!",
 		"options": [
 			{
 				"text": "Tentar desligar o rádio.",
@@ -178,7 +178,7 @@
 	},
 	{
 		"id": 15,
-		"audio": "click.wav",
+		"audio": "15.wav",
 		"text": "Você não consegue desligar o rádio, os soldados escutam e gritam \"Tem alguém aí?\" E apontam as armas na sua direção.",
 		"options": [
 			{
@@ -193,7 +193,7 @@
 	},
 	{
 		"id": 16,
-		"audio": "click.wav",
+		"audio": "16.wav",
 		"text": "Os soldados o escutam e atiram em sua direção, uma das balas atravessa o seu peito e você cai no chão.",
 		"options": [
 			{
@@ -204,8 +204,8 @@
 	},
 	{
 		"id": 17,
-		"audio": "click.wav",
-		"text": "\"Nossa foi por pouco, mas acho que consegui me afastar\", você ouve o rádio que diz \"soldado, o tempo está acabando, siga o caminho de onde estás pela esquerda através do muro, indo com a mão nele chegarás rápido, deverás chegar a uma escada\".",
+		"audio": "17.wav",
+		"text": "Nossa foi por pouco, mas acho que consegui me afastar.",
 		"options": [
 			{
 				"text": "Correr com a mão na parede para chegar a tempo",
@@ -219,8 +219,8 @@
 	},
 	{
 		"id": 18,
-		"audio": "click.wav",
-		"text": "O tempo está se esgotando soldado.",
+		"audio": "18.wav",
+		"text": " Rádio: O tempo está se esgotando soldado.",
 		"options": [
 			{
 				"text": "Estou indo o mais rápido que posso, não posso correr o risco de ser visto",
@@ -245,8 +245,8 @@
 	},
 	{
 		"id": 20,
-		"audio": "click.wav",
-		"text": "Você chegou na escada e então fala pelo rádio \"Eu cheguei na escadaria para o Heliporto\" e o guia responde \"suba logo, há alguns soldados inimigos de guarda no heliporto, mas eles estão na mira de nossos atiradores que estão a 300 metros da região, ordenaremos que eles sejam mortos quando você estiver mais próximo deles\".",
+		"audio": "20.wav",
+		"text": "Léo: Eu cheguei na escadaria para o Heliporto",
 		"options": [
 			{
 				"text": "Subir na escadaria",
@@ -256,8 +256,8 @@
 	},
 	{
 		"id": 21,
-		"audio": "click.wav",
-		"text": "Você vai subindo as escadas e conforme sobe você ouve o som de 3 tiros, os tiros chamam a atenção dos soldados inimigos que procuram a fonte dele, o rádio fala \"O caminho está livre, suba logo\"",
+		"audio": "21.wav",
+		"text": "Você vai subindo as escadas e conforme sobe você ouve o som de 3 tiros... os tiros chamam a atenção dos soldados inimigos que procuram a fonte dele...",
 		"options": [
 			{
 				"text": "Correr com as mãos no corrimão para não cair.",
@@ -267,7 +267,7 @@
 	},
 	{
 		"id": 22,
-		"audio": "click.wav",
+		"audio": "22.wav",
 		"text": "Você chega ao topo e ouve o helicoptero chegando, os soldados inimigos estavam mortos em um andar anterior ao heliporto.",
 		"options": [
 			{
@@ -278,7 +278,7 @@
 	},
 	{
 		"id": 23,
-		"audio": "click.wav",
+		"audio": "23.wav",
 		"text": "O helicoptero pousa e um homem desce do helicoptero e pega no seu braço falando \"Leo, venha comigo, você está a salvo\"",
 		"options": [
 			{
@@ -289,7 +289,7 @@
 	},
 	{
 		"id": 24,
-		"audio": "click.wav",
+		"audio": "24.wav",
 		"text": "Você está a salvo, o helicoptero alça vôo e é ordenado pelos seus aliados um bombardeio para impedir que os inimigos tomem conta daquele posto militar.",
 		"options": [
 			{
