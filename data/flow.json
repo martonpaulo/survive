@@ -2,7 +2,7 @@
 	{
 		"id": 0,
 		"audio": "1.wav",
-		"text": "Soldado, soldado, na escuta? Onde você está?",
+		"text": "Rádio: Soldado, soldado, na escuta? Onde você está?",
 		"options": [
 			{
 				"text": "Continuar",
@@ -13,7 +13,7 @@
 	{
 		"id": 1,
 		"audio": "click.wav",
-		"text": "Eu estou na base 3, estávamos aqui na base e do nada houve um barulho enorme, eu não vejo nada!!",
+		"text": "Leo: Eu estou na base 3, estávamos aqui na base e do nada houve um barulho enorme, eu não vejo nada!!",
 		"options": [
 			{
 				"text": "Continuar",
@@ -24,7 +24,7 @@
 	{
 		"id": 2,
 		"audio": "click.wav",
-		"text": "Meu Deus, achamos que o tínhamos perdido homem, caiu uma bomba na área onde você está a alguns minutos, já confirmamos a morte de 5 soldados, você é o único sobrevivente confirmado até agora, tem mais uma pessoa por aí em algum lugar, não sabemos se está viva. Estamos enviando um helicóptero para o resgatar, ele irá chegar no heliporto em alguns minutos, terás que dar um jeito de chegar lá a tempo.  ",
+		"text": "Rádio enviando uma mensagem longa",
 		"options": [
 			{
 				"text": "Continuar",

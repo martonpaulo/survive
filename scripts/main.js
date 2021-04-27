@@ -98,7 +98,7 @@ function startGame() {
   
   sounds['music'].pause();
   sounds['music'].currentTime = 0;
-  sounds['drums'].play();
+  sounds['flowStart'].play();
 
   flowData = JSON.parse(flowData);
 
