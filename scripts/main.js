@@ -4,6 +4,7 @@ const sounds = {
   'click': new Audio('./audio/click.wav'),
   'drums': new Audio('./audio/drums.wav'),
   'music': new Audio('./audio/music.mp3'),
+  'flowStart': new Audio('./audio/0.wav'),
 };
 
 let flowData = '';
