@@ -76,7 +76,7 @@
 			},
 			{
 				"text": "Espere, o outro soldado pode estar vivo.",
-				"goTo": 100
+				"goTo": 25
 			}
 		]
 	},
