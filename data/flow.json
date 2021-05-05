@@ -68,7 +68,7 @@
 	{
 		"id": 6,
 		"audio": "07.wav",
-		"text": " A porta está na sua frente, siga até ela seguir as próximas instruções.",
+		"text": " A porta está na sua frente, siga até ela e aguarde novas instruções.",
 		"options": [
 			{
 				"text": "Andar até a porta",
